@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>Maptime #15</title>
+		<title>Vector Tiles</title>
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/white.css">
 		<!-- Theme used for syntax highlighting of code -->
@@ -12,64 +12,67 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-state='openingslide' data-background="img/maptimeAMS.png" data-background-size='60%'> 
-				</section>
 				<section data-state='openingslide' data-background="https://www.mapbox.com/help/img/screenshots/dynamic-ny-details.gif">
-					<h1>Maptime Amsterdam #15</h1>
-					<h2>Vector Tile workshop </h2>
+					<h1>Vector Tiles </h1>
 					<h2>By Niene Boeijen</h2>
 				</section>
 				<section>
-					<h1>About me </h1>
-					<img src="https://raw.githubusercontent.com/wiki/NieneB/Webmapping_for_beginners/img/webmapper_logo_tekst.png" width="300px">
-					<p>Web Cartographer & Geo ICT developer</p>
-					<img src="img/WS_logo.jpg" width="300px">
-					<p> Internship, Hosting Maptime</p>
-				</section>
-				<section>
 					<section>
-						<h1>This evening! </h1>
-						<h2><ol>
-							<li>Presentation.</li>
-							<li>Workshop. </li>
-						    <li>Show and tell. </li>
-						</ol>
-						</h2>
-						<p> Maptime is BYOB!</p>
+						<h1>About me </h1>
+						<div style="float:left; width:50%;"> 
+							<a href="http://webmapper.net"><img src="https://raw.githubusercontent.com/wiki/NieneB/Webmapping_for_beginners/img/webmapper_logo_tekst.png" height="120px"> </a>
+							<a href="http://maptime.io"><img src="img/maptimeAMS.png" height="200px"></a>
+							<a href="https://waag.org/en/users/niene-boeijen"><img src="img/WS_logo.jpg" height="100px"></a>
+							<img src="img/wur.jpg" width="250px">
+						</div>
+						<div style="float:right; width: 50%;">
+							<p>Web Cartographer & Geo ICT developer</p>
+							<p>Maptime Amsterdam & Utrecht</p>
+							<p>Internship</p>
+							<p>Msc Geo Information Science & Remote Sensing</p>
+						</div>
 					</section>
 					<section>
-						<h2>WIFI:</h2>  
-						<p>WaagGuest</p>
-						<h2>PW:</h2>
-						<p>guest@waag</p>
+						<a href="http://webmapper.net"><img src="https://raw.githubusercontent.com/wiki/NieneB/Webmapping_for_beginners/img/webmapper_logo_tekst.png" height="150px"></a>
+						<blockquote> <i><p>What the map can be</p>
+						<p>Wij maken interactieve kaarten en datavisualisaties. Onze expertise is open {source; data; standaarden}. Onze kracht is het combineren van cartografie en webtechnologie.</p></i></blockquote>
+						<p>Utrecht, The Netherlands</p>
 					</section>
 					<section> 
 						<p>This presentation</p>
-						<h1 style=" text-transform: initial"><a href="http://bit.ly/2sA4mly">bit.ly/2sA4mly</a></h1>
-						<a href="https://maptime-ams.github.io/vector-tiles-workshop/#/">https://maptime-ams.github.io/vector-tiles-workshop/</a>
-						<p>The workshop:</p>
-						<a href="https://github.com/maptime-ams/vector-tiles-workshop/wiki">https://github.com/maptime-ams/vector-tiles-workshop/wiki</a>
-						<p>The materials needed:</p> 
-						<a href="https://github.com/maptime-ams/vector-tiles-workshop">https://github.com/maptime-ams/vector-tiles-workshop</a>
+						<h2 style="text-transform: initial;"><a href="https://nieneb.github.io/vector-tiles">https://nieneb.github.io/vector-tiles</a></h2>
 					</section>
 				</section>
 				<section>
-					<h1>Vector tiles!</h1>
-					<p>Let's start from the beginning</p>
-					<ul>
-						<li>What is a Web map?</li>
-						<li>From Raster to Vector</li>
-						<li>Vector tiles and what they look like</li>
-						<ul>
-							<li>Standards</li>
-							<li>Downloading</li>
-							<li>Making yourself</li>
-							<li>Hosting</li>
-							<li>Visualizing</li>
-						</ul>
-					</ul>
+					<section>
+						<h1>Vector tiles!</h1>
+					</section>
+					<section  data-background="https://raw.githubusercontent.com/emacgillavry/foss4gnl-vector-tiles/master/img/vector-pdok.png">
+						<h1>Kadaster/PDOK</h1>
+					</section>
+					<section  data-background="https://raw.githubusercontent.com/emacgillavry/foss4gnl-vector-tiles/master/img/disco-pdok.png">
+						<h1>Kadaster/PDOK</h1>
+					</section>
+					<section  data-background="https://raw.githubusercontent.com/emacgillavry/foss4gnl-vector-tiles/master/img/adam-vogelvlucht.png">
+						<h1>Datalab Amsterdam</h1>
+					</section>
 				</section>
-				<section >
+				<section>
+					<section>
+						<p>Let's start from the beginning</p>
+						<ul>
+							<li>What is a Web map?</li>
+							<li>From Raster to Vector</li>
+							<li>Vector tiles and what they look like</li>
+							<ul>
+								<li>Standards</li>
+								<li>Downloading</li>
+								<li>Making yourself</li>
+								<li>Hosting</li>
+								<li>Visualizing</li>
+							</ul>
+						</ul>
+					</section>
 					<section>
 						<h1>What is a web map?</h1>
 						<p>Analogue paper</p>
@@ -131,10 +134,6 @@
 						<a href="http://tile.openstreetmap.org/17/67320/43073.png">http://tile.openstreetmap.org/17/67320/43073.png</a>
 						<code data-trim data-noescape>{z/x/y}</code>
 					</section>
-					<section >
-					<img src="http://maptime.io/anatomy-of-a-web-map/images/anatomy-of-a-web-map.png">
-					<a href="https://www.mapbox.com/help/how-web-maps-work/" style="float:right;">More info!</a>
-					</section>
 				</section>
 				<section>
 					<section>
@@ -144,15 +143,18 @@
 					<section data-background="http://mapschool.io/img/vector_types.png" data-background-size='60%'></section>
 					<section data-background="http://www.emu-analytics.com/perch/resources/map-tiles-2-w800.png" data-background-size='60%'></section>
 					<section>
+                        <h1>Nadelen Raster Tiles</h1>
+                        <p>Interactie met objecten</p>
+                        <p>Informatie van objecten</p>
+                        <p class="fragment grow">Opslag: meerdere visualisaties</p>
+					</section>
+					<section>
 						<h1>Advantages Vector tiles</h1>
 						<p> Rendering is done on client side not by the server!</p>
 						<p> So different clients can style a map different!</p>
 						<p> Small tile size! So faster data transfer. </p>
 						<p> High resolution! </p>
 						<p> Access to feature information!</p>
-					</section>
-					<section >
-					<img src="http://maptime.io/anatomy-of-a-web-map/images/anatomy-of-a-web-map.png">
 					</section>
 					<section>
 						<h2>Who What Where?</h2>
@@ -229,13 +231,15 @@
 						<p>Mapbox studio</p>
 						<p>JavaScript</p>
 					</section>
-
 					<section> 
 						<h1> Cool stuff!</h1>
 						<p><a href="https://www.mapbox.com/gallery/#map-7">Beautiful visualizations!</a></p>
 						<p><a href="https://parallel.co.uk/os-openmap-cyo/#12.47/54.3741/-2.916">Colouring on the fly!</a></p>
 						<p><a href="http://webmapper.net/#14.44/52.3715/4.9028/-11.2/60">Web GL for 3D extrusion!</a></p>
 						<p><a href="file:///home/niene/Documents/00_Projecten/2017_02_Kadaster_Vector_Tiles/brtviz/openlayers/index.html">JavaScript interactivity</a></p>
+					</section>
+					<section data-background="https://github.com/emacgillavry/foss4gnl-vector-tiles/blob/master/img/cartogram.png?raw=true">
+                        <h1><a href="https://www.mapbox.com/cartogram/">Cartogram</h1>
 					</section>
 					<section>
 						<h1> More info? </h1>
